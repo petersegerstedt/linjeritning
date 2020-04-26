@@ -1,0 +1,3 @@
+[submodule "NURBS-Python"]
+	path = NURBS-Python
+	url = https://github.com/orbingol/NURBS-Python.git
