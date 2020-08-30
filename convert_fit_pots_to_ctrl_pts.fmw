@@ -1,0 +1,740 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        /Library/FME/2020.0/fme /Users/peter/Documents/projects/linjeritning/convert_fit_pots_to_ctrl_pts.fmw
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5368.16 882.508"
+#!   DOC_TOP_LEFT="465.005 -1106.51"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="20202"
+#!   FME_DOCUMENT_GUID="c4615c61-e4cd-4e49-86c7-62101278d042"
+#!   FME_DOCUMENT_PRIORGUID="e06deff4-77e6-42bb-a3fa-2e18626b9a37"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2020.0.0.1 (20200316 - Build 20202 - macosx)"
+#!   LAST_SAVE_DATE="2020-08-30T12:45:35"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="36"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="2745.03 -168.002"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="FeatureReader"
+#!   OVERRIDE="--FeatureReaderDataset_FeatureReader"
+#!   DATASET="FeatureReader/test_fit_pts.dxf"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="FeatureWriter"
+#!   OVERRIDE="--FeatureWriterDataset_FeatureWriter"
+#!   DATASET="FeatureWriter/test_fit_pts.dxf"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="465.00465004650044 -405.00405004050037"
+#!   BOUNDING_RECT="465.00465004650044 -405.00405004050037 430 71"
+#!   ORDER="500000000000089"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="0 0 1 0 1.5 0.5 2 0.25 3 -1"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="2D Coordinate List"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="CoordinateConcatenator"
+#!   VERSION="4"
+#!   POSITION="924.50924509245078 -518.00518005180038"
+#!   BOUNDING_RECT="924.50924509245078 -518.00518005180038 508.98544325772946 71"
+#!   ORDER="500000000000091"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COORDINATES_TO_INCLUDE_DIS" PARM_VALUE="X"/>
+#!     <XFORM_PARM PARM_NAME="COORD_ATTR" PARM_VALUE="autocad_fit_x"/>
+#!     <XFORM_PARM PARM_NAME="COORD_DELIM" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ELEMENT_DELIM" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateConcatenator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="CoordinateConcatenator"
+#!   VERSION="4"
+#!   POSITION="1562.5151251512514 -610.00560005600028"
+#!   BOUNDING_RECT="1562.5151251512514 -610.00560005600028 508.98544325772946 71"
+#!   ORDER="500000000000091"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COORDINATES_TO_INCLUDE_DIS" PARM_VALUE="Y"/>
+#!     <XFORM_PARM PARM_NAME="COORD_ATTR" PARM_VALUE="autocad_fit_y"/>
+#!     <XFORM_PARM PARM_NAME="COORD_DELIM" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ELEMENT_DELIM" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateConcatenator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="2369.2575625756258 -422.50280002800014"
+#!   BOUNDING_RECT="2369.2575625756258 -422.50280002800014 454 71"
+#!   ORDER="500000000000093"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="autocad_entity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; autocad_entity SET_TO autocad_spline"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="FeatureWriter"
+#!   VERSION="0"
+#!   POSITION="2369.2575625756258 -668.00668006680075"
+#!   BOUNDING_RECT="2369.2575625756258 -668.00668006680075 430 71"
+#!   ORDER="500000000000094"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ACAD_APPEND_TO_TEMPLATEFILE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_AUDIT_AND_FIX" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_CAD_WRT_ADV_PARM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_COORDINATE_SYSTEM_STORAGE" PARM_VALUE="NONE"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_CREATED_BLOCK_NAME_PREFIX" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_DEFAULT_APPLICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_DEFAULT_ATTR_STORAGE" PARM_VALUE="external_attributes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_DESTINATION_DATASETTYPE_VALIDATION" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_INSERTION_SCALE_UNITS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_OUTPUT_DEFINED_ATTRS_ONLY" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_PREFER_DONUTS_AS_HATCHES" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_PURGE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_SHAPE_DIRECTORY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_TEMPLATEFILE_GUI" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_TEMPLATE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_USE_BLOCK_NAME_FOR_CREATION" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_VERSION" PARM_VALUE="Release2013"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_WRITE_THUMBNAIL_IMAGE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="$(FME_MF_DIR_ENCODED)test_fit_pts.dxf"/>
+#!     <XFORM_PARM PARM_NAME="DATASET_ATTR" PARM_VALUE="_dataset"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE_LIST_ATTR" PARM_VALUE="_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ACAD"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="RUNTIME_MACROS,DEFAULT_ATTR_STORAGE&lt;comma&gt;external_attributes&lt;comma&gt;VERSION&lt;comma&gt;Release2013&lt;comma&gt;TEMPLATEFILE_GUI&lt;comma&gt;&lt;comma&gt;TEMPLATE_GROUP&lt;comma&gt;&lt;comma&gt;APPEND_TO_TEMPLATEFILE&lt;comma&gt;no&lt;comma&gt;PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES&lt;comma&gt;yes&lt;comma&gt;CAD_WRT_ADV_PARM_GROUP&lt;comma&gt;&lt;comma&gt;DEFAULT_APPLICATION&lt;comma&gt;&lt;comma&gt;OUTPUT_DEFINED_ATTRS_ONLY&lt;comma&gt;yes&lt;comma&gt;SHAPE_DIRECTORY&lt;comma&gt;&lt;comma&gt;CREATED_BLOCK_NAME_PREFIX&lt;comma&gt;&lt;comma&gt;AUDIT_AND_FIX&lt;comma&gt;yes&lt;comma&gt;COORDINATE_SYSTEM_STORAGE&lt;comma&gt;NONE&lt;comma&gt;USE_BLOCK_NAME_FOR_CREATION&lt;comma&gt;no&lt;comma&gt;PURGE&lt;comma&gt;no&lt;comma&gt;INSERTION_SCALE_UNITS&lt;comma&gt;&lt;comma&gt;WRITE_THUMBNAIL_IMAGE&lt;comma&gt;no&lt;comma&gt;PREFER_DONUTS_AS_HATCHES&lt;comma&gt;no&lt;comma&gt;DESTINATION_DATASETTYPE_VALIDATION&lt;comma&gt;Yes,METAFILE,ACAD"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ACAD_WRITE_THUMBNAIL_IMAGE,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Write&lt;space&gt;Thumbnail&lt;space&gt;Image:,ACAD_APPEND_TO_TEMPLATEFILE,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Preserve&lt;space&gt;Model&lt;space&gt;Space&lt;space&gt;Data:,ACAD_CREATED_BLOCK_NAME_PREFIX,&quot;OPTIONAL TEXT&quot;,ACAD&lt;space&gt;Created&lt;space&gt;Block&lt;space&gt;Name&lt;space&gt;Prefix:,ACAD_VERSION,&quot;OPTIONAL CHOICE Release12%Release13%Release14%Release2000%Release2004%Release2007%Release2010%Release2013%Release2018%same_as_template&quot;,ACAD&lt;space&gt;AutoCAD&lt;space&gt;Version:,ACAD_COORDINATE_SYSTEM_STORAGE,&quot;OPTIONAL LOOKUP_CHOICE None,NONE%&quot;&quot;External PRJ&quot;&quot;,EXTERNAL_PRJ%&quot;&quot;Internal WKT&quot;&quot;,INTERNAL_WKT%&quot;&quot;External and Internal&quot;&quot;,EXTERNAL_AND_INTERNAL&quot;,ACAD&lt;space&gt;Coordinate&lt;space&gt;System&lt;space&gt;Storage:,ACAD_USE_BLOCK_NAME_FOR_CREATION,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Use&lt;space&gt;the&lt;space&gt;block&lt;space&gt;name&lt;space&gt;to&lt;space&gt;create&lt;space&gt;blocks:,ACAD_DEFAULT_ATTR_STORAGE,&quot;OPTIONAL RADIO_GROUP 1%&quot;&quot;Extended Entity Data&quot;&quot;,extended_entity_data%Inserts,insert_attributes%Limited,external_attributes&quot;,ACAD&lt;space&gt;Attribute&lt;space&gt;Output,ACAD_CAD_WRT_ADV_PARM_GROUP,&quot;OPTIONAL DISCLOSUREGROUP DEFAULT_APPLICATION%OUTPUT_DEFINED_ATTRS_ONLY%SHAPE_DIRECTORY%CREATED_BLOCK_NAME_PREFIX%AUDIT_AND_FIX%COORDINATE_SYSTEM_STORAGE%USE_BLOCK_NAME_FOR_CREATION%PURGE%INSERTION_SCALE_UNITS%WRITE_THUMBNAIL_IMAGE%PREFER_DONUTS_AS_HATCHES&quot;,ACAD&lt;space&gt;Advanced,ACAD_INSERTION_SCALE_UNITS,&quot;OPTIONAL LOOKUP_CHOICE Undefined,UNDEFINED%Inches,INCHES%Feet,FEET%Miles,MILES%Millimeters,MILLIMETERS%Centimeters,CENTIMETERS%Meters,METERS%Kilometers,KILOMETERS%Microinches,MICROINCHES%Mils,MILS%Yards,YARDS%Angstroms,ANGSTROMS%Nanometers,NANOMETERS%Microns,MICRONS%Decimeters,DECIMETERS%Dekameters,DEKAMETERS%Hectometers,HECTOMETERS%Gigameters,GIGAMETERS%Astronomical,ASTRONOMICAL%Lightyears,LIGHTYEARS%Parsecs,PARSECS&quot;,ACAD&lt;space&gt;Insertion&lt;space&gt;Scale&lt;space&gt;Units:,ACAD_AUDIT_AND_FIX,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Audit&lt;space&gt;And&lt;space&gt;Fix&lt;space&gt;Errors:,ACAD_TEMPLATEFILE_GUI,&quot;OPTIONAL FILENAME_MUSTEXIST DWG_Files(*.dwg)/DXF_Files(*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|Template_FILES(*.dwt)|*.dwt|All_files(*)|*&quot;,ACAD&lt;space&gt;Template&lt;space&gt;File:,ACAD_SHAPE_DIRECTORY,&quot;OPTIONAL DIRNAME&quot;,ACAD&lt;space&gt;AutoCAD&lt;space&gt;Shape&lt;space&gt;File&lt;space&gt;Folder:,ACAD_DEFAULT_APPLICATION,&quot;OPTIONAL TEXT&quot;,ACAD&lt;space&gt;Default&lt;space&gt;Application&lt;space&gt;Name:,ACAD_DESTINATION_DATASETTYPE_VALIDATION,&quot;OPTIONAL NO_EDIT TEXT&quot;,ACAD&lt;space&gt;,ACAD_OUTPUT_DEFINED_ATTRS_ONLY,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Output&lt;space&gt;Defined&lt;space&gt;Attributes&lt;space&gt;Only:,ACAD_TEMPLATE_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_OPEN%TEMPLATEFILE_GUI%APPEND_TO_TEMPLATEFILE%PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES&quot;,ACAD&lt;space&gt;Template&lt;space&gt;File,ACAD_PREFER_DONUTS_AS_HATCHES,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Prefer&lt;space&gt;writing&lt;space&gt;donuts&lt;space&gt;as&lt;space&gt;hatches:,ACAD_PURGE,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Purge&lt;space&gt;Unused&lt;space&gt;Objects:,ACAD_PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES,&quot;OPTIONAL CHOICE yes%no&quot;,ACAD&lt;space&gt;Preserve&lt;space&gt;Paper&lt;space&gt;Space&lt;space&gt;Data:"/>
+#!     <XFORM_PARM PARM_NAME="MORE_SUMMARY_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NO_OUTPUT_PORTS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS" PARM_VALUE="&quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="NO_OUTPUT_PORTS"/>
+#!     <XFORM_PARM PARM_NAME="PER_EACH_INPUT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SUMMARY_ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TOTAL_FEATURES_WRITTEN_ATTR" PARM_VALUE="_total_features_written"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_DIRECTIVES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_FEATURE_TYPE_PARAMS" PARM_VALUE="data:Output,ftp_feature_type_name,data,ftp_writer,ACAD,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,&lt;lt&gt;lt&lt;gt&gt;Unused&lt;lt&gt;gt&lt;gt&gt;,ftp_attribute_source,0,ftp_user_attributes,autocad_entity&lt;comma&gt;char&lt;lt&gt;openparen&lt;gt&gt;200&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;_creation_instance&lt;comma&gt;number&lt;lt&gt;openparen&lt;gt&gt;20&lt;lt&gt;comma&lt;gt&gt;0&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;autocad_fit_x&lt;comma&gt;number&lt;lt&gt;openparen&lt;gt&gt;31&lt;lt&gt;comma&lt;gt&gt;15&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;autocad_fit_y&lt;comma&gt;number&lt;lt&gt;openparen&lt;gt&gt;31&lt;lt&gt;comma&lt;gt&gt;15&lt;lt&gt;closeparen&lt;gt&gt;,ftp_user_attribute_values,&lt;comma&gt;&lt;comma&gt;&lt;comma&gt;,ftp_format_attributes,autocad_entity&lt;comma&gt;autocad_fit_x&lt;comma&gt;autocad_fit_y,ftp_format_parameters,autocad_settings&lt;comma&gt;&lt;comma&gt;autocad_layer_appearance_group&lt;comma&gt;YES&lt;comma&gt;autocad_layer_state_group&lt;comma&gt;&lt;comma&gt;autocad_color&lt;comma&gt;10&lt;comma&gt;autocad_linetype&lt;comma&gt;CONTINUOUS&lt;comma&gt;autocad_layer_frozen&lt;comma&gt;No&lt;comma&gt;autocad_layer_hidden&lt;comma&gt;No&lt;comma&gt;autocad_layer_locked&lt;comma&gt;No&lt;comma&gt;autocad_layer_on&lt;comma&gt;Yes&lt;comma&gt;autocad_layer_plottable&lt;comma&gt;Yes&lt;comma&gt;autocad_layer_desc&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WRITER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_METAFILE" PARM_VALUE="ATTRIBUTE_CASE,ANY,ATTRIBUTE_INVALID_CHARS,.&lt;space&gt;%#&lt;openbracket&gt;&lt;closebracket&gt;&lt;quote&gt;&lt;openparen&gt;&lt;closeparen&gt;!?*&lt;apos&gt;&lt;amp&gt;+&lt;backslash&gt;&lt;solidus&gt;,ATTRIBUTE_LENGTH,60,ATTR_TYPE_MAP,char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varbinary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_binary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;char&lt;openparen&gt;20&lt;closeparen&gt;&lt;comma&gt;fme_datetime&lt;comma&gt;char&lt;openparen&gt;12&lt;closeparen&gt;&lt;comma&gt;fme_time&lt;comma&gt;char&lt;openparen&gt;8&lt;closeparen&gt;&lt;comma&gt;fme_date&lt;comma&gt;string&lt;comma&gt;fme_buffer&lt;comma&gt;string&lt;comma&gt;fme_binarybuffer&lt;comma&gt;string&lt;comma&gt;fme_xml&lt;comma&gt;string&lt;comma&gt;fme_json&lt;comma&gt;logical&lt;comma&gt;fme_boolean&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;31&lt;comma&gt;15&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_real64&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;15&lt;comma&gt;7&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_real32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;20&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int64&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;20&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint64&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;11&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;11&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;6&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int16&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;6&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint16&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;4&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int8&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;4&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint8&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;width&lt;comma&gt;decimal&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;fme_decimal&lt;openparen&gt;width&lt;comma&gt;decimal&lt;closeparen&gt;&lt;quote&gt;,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,,FEATURE_TYPE_LENGTH,0,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile&lt;solidus&gt;ACAD.fmf,FORMAT_NAME,ACAD,GEOM_MAP,autocad_point&lt;comma&gt;fme_point&lt;comma&gt;autocad_insert&lt;comma&gt;fme_point&lt;comma&gt;autocad_shape&lt;comma&gt;fme_point&lt;comma&gt;autocad_line&lt;comma&gt;fme_line&lt;comma&gt;autocad_leader&lt;comma&gt;fme_line&lt;comma&gt;autocad_xline&lt;comma&gt;fme_line&lt;comma&gt;autocad_ray&lt;comma&gt;fme_line&lt;comma&gt;autocad_polygon&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_trace&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_solid&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_face&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_layout&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_text&lt;comma&gt;fme_text&lt;comma&gt;autocad_arc&lt;comma&gt;fme_arc&lt;comma&gt;autocad_ellipse&lt;comma&gt;fme_ellipse&lt;comma&gt;autocad_polygon&lt;comma&gt;fme_rectangle&lt;comma&gt;autocad_polygon&lt;comma&gt;fme_rounded_rectangle&lt;comma&gt;autocad_spline&lt;comma&gt;fme_line&lt;comma&gt;fme_no_map&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_attribute&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_multi_line&lt;comma&gt;fme_line&lt;comma&gt;autocad_multi_text&lt;comma&gt;fme_text&lt;comma&gt;autocad_attr_def&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_viewport&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_tolerance&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_dictionary&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_mline_style&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_class&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_hatch&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_mpolygon&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_region&lt;comma&gt;fme_polygon&lt;comma&gt;autocad_surface&lt;comma&gt;fme_surface&lt;comma&gt;autocad_solid3d&lt;comma&gt;fme_solid&lt;comma&gt;autocad_raster&lt;comma&gt;fme_raster&lt;comma&gt;autocad_xref&lt;comma&gt;fme_point&lt;comma&gt;autocad_oriented_arc&lt;comma&gt;fme_line&lt;comma&gt;autocad_body&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_zombie&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_xrecord&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_leader&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_group&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_proxy&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_block&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_begin_block&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_end_block&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_block&lt;comma&gt;fme_collection&lt;comma&gt;autocad_dimension&lt;comma&gt;fme_collection&lt;comma&gt;autocad_dimension_def&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_info&lt;comma&gt;fme_no_geom&lt;comma&gt;autocad_polygon&lt;comma&gt;fme_point_cloud&lt;comma&gt;fme_no_map&lt;comma&gt;fme_feature_table,READER_ATTR_INDEX_TYPES,,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,yes,WORKBENCH_CANNED_SCHEMA,,WRITER,ACAD,WRITER_ATTR_INDEX_TYPES,,WRITER_DEFLINE_PARMS,&lt;quote&gt;GUI&lt;space&gt;NAMEDGROUP&lt;space&gt;autocad_settings&lt;space&gt;autocad_layer_desc%autocad_layer_appearance_group%autocad_layer_state_group&lt;space&gt;Layer&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;DISCLOSUREGROUP&lt;space&gt;autocad_layer_appearance_group&lt;space&gt;autocad_linetype%autocad_color&lt;space&gt;Appearance&lt;quote&gt;&lt;comma&gt;YES&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;DISCLOSUREGROUP&lt;space&gt;autocad_layer_state_group&lt;space&gt;autocad_layer_on%autocad_layer_frozen%autocad_layer_hidden%autocad_layer_locked%autocad_layer_plottable&lt;space&gt;State&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;INTEGER&lt;space&gt;autocad_color&lt;space&gt;Default&lt;space&gt;Color&lt;quote&gt;&lt;comma&gt;10&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;TEXT&lt;space&gt;autocad_linetype&lt;space&gt;Default&lt;space&gt;Linetype&lt;quote&gt;&lt;comma&gt;CONTINUOUS&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;CHOICE&lt;space&gt;autocad_layer_frozen&lt;space&gt;Yes%No&lt;space&gt;Frozen&lt;quote&gt;&lt;comma&gt;No&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;CHOICE&lt;space&gt;autocad_layer_hidden&lt;space&gt;Yes%No&lt;space&gt;Hidden&lt;quote&gt;&lt;comma&gt;No&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;CHOICE&lt;space&gt;autocad_layer_locked&lt;space&gt;Yes%No&lt;space&gt;Locked&lt;quote&gt;&lt;comma&gt;No&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;CHOICE&lt;space&gt;autocad_layer_on&lt;space&gt;Yes%No&lt;space&gt;On&lt;quote&gt;&lt;comma&gt;Yes&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;CHOICE&lt;space&gt;autocad_layer_plottable&lt;space&gt;Yes%No&lt;space&gt;Plottable&lt;quote&gt;&lt;comma&gt;Yes&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;OPTIONAL&lt;space&gt;TEXT&lt;space&gt;autocad_layer_desc&lt;space&gt;Description&lt;quote&gt;&lt;comma&gt;,WRITER_DEF_LINE_TEMPLATE,&lt;opencurly&gt;FME_GEN_GROUP_NAME&lt;closecurly&gt;&lt;comma&gt;autocad_color&lt;comma&gt;10&lt;comma&gt;autocad_linetype&lt;comma&gt;CONTINUOUS&lt;comma&gt;autocad_layer_frozen&lt;comma&gt;no&lt;comma&gt;autocad_layer_hidden&lt;comma&gt;no&lt;comma&gt;autocad_layer_locked&lt;comma&gt;no&lt;comma&gt;autocad_layer_on&lt;comma&gt;yes&lt;comma&gt;autocad_layer_plottable&lt;comma&gt;yes&lt;comma&gt;autocad_layer_desc&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;,WRITER_FORMAT_PARAMETER,ADVANCED_PARMS&lt;comma&gt;&lt;quote&gt;ACAD_OUT_DEFAULT_ATTR_STORAGE&lt;space&gt;ACAD_OUT_DEFAULT_APPLICATION&lt;space&gt;ACAD_OUT_OUTPUT_DEFINED_ATTRS_ONLY&lt;space&gt;ACAD_OUT_SHAPE_DIRECTORY&lt;space&gt;ACAD_OUT_CREATED_BLOCK_NAME_PREFIX&lt;space&gt;ACAD_OUT_AUDIT_AND_FIX&lt;space&gt;ACAD_OUT_COORDINATE_SYSTEM_STORAGE&lt;space&gt;ACAD_OUT_APPEND_TO_TEMPLATEFILE&lt;space&gt;ACAD_OUT_PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES&lt;space&gt;ACAD_OUT_USE_BLOCK_NAME_FOR_CREATION&lt;space&gt;ACAD_OUT_PURGE&lt;space&gt;ACAD_OUT_INSERTION_SCALE_UNITS&lt;space&gt;ACAD_OUT_WRITE_THUMBNAIL_IMAGE&lt;space&gt;ACAD_OUT_PREFER_DONUTS_AS_HATCHES&lt;quote&gt;&lt;comma&gt;MIME_TYPE&lt;comma&gt;&lt;quote&gt;.dwg&lt;space&gt;image&lt;solidus&gt;vnd.dwg&lt;space&gt;.dxf&lt;space&gt;image&lt;solidus&gt;vnd.dxf&lt;space&gt;ADD_DISPOSITION&lt;quote&gt;&lt;comma&gt;DATASET_NAME&lt;comma&gt;&lt;quote&gt;dwg&lt;space&gt;file&lt;quote&gt;&lt;comma&gt;FEATURE_TYPE_NAME&lt;comma&gt;Layer&lt;comma&gt;FEATURE_TYPE_DEFAULT_NAME&lt;comma&gt;Layer1&lt;comma&gt;READER_DATASET_HINT&lt;comma&gt;&lt;quote&gt;Select&lt;space&gt;the&lt;space&gt;DWG&lt;space&gt;file&lt;openparen&gt;s&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;WRITER_DATASET_HINT&lt;comma&gt;&lt;quote&gt;Specify&lt;space&gt;a&lt;space&gt;name&lt;space&gt;for&lt;space&gt;the&lt;space&gt;DWG&lt;space&gt;file&lt;quote&gt;,WRITER_HAS_DEFLINE_ATTRS,yes"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureWriter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="FeatureReader"
+#!   VERSION="11"
+#!   POSITION="3159.5315953159534 -758.00758007580066"
+#!   BOUNDING_RECT="3159.5315953159534 -758.00758007580066 430 71"
+#!   ORDER="500000000000095"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ACAD_ACAD_ATTRIBUTE_OPTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_ACAD_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_ACAD_RDR_ADV_PARM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_ALLOW_DASH_CHAR_IN_ATTR_NAMES" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_ALL_MERGED_FILTERS_NEED_NO_DEFS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_APPLY_WORLD_FILE" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_DXF_HEADER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_ENTITY_OPTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_EVALUATE_MLINE_GEOM" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_EXPLODE_MTEXT" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_EXPOSE_ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_IGNORE_FROZEN_LAYERS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_IGNORE_HIDDEN_LAYERS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_IGNORE_UCS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_INTERPRET_EXTENDED_DATA" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_LIST_ATTRIBUTE_ENTITY_DATA" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_LIST_EXTENDED_DATA" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_METAFILE" PARM_VALUE="acad"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_PRESERVE_CLIPPED_RASTERS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_PRESERVE_COMPLEX_HATCHES" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_PRESERVE_INSERTS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_AS_2_5D" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_GROUPS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_MODEL_SPACE" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_PAPER_SPACE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_PROXY_GRAPHICS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_RASTERS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_REGIONS_AS_AREAS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_SYS_VARS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_USER_DICTIONARIES" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_READ_XREFS" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_RESOLVE_BLOCKS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_RESOLVE_DIMENSIONS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_RESOLVE_ENTITY_COLOR" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_RESOLVE_SELECTED_BLOCKS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_SPACE_OPTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_STORE_BULGE_INFO" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_STORE_INSERT_POINT" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_STORE_LAYER_INFO" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_STORE_SPLINE_DEFS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_STRUCTURE_EXTENDED_DATA" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_USE_BLOCK_HEADER_LAYER" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_USE_BLOCK_LAYER_INFO" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_USE_DXF_HEADER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ACAD_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_VISIBLE_ATTRIBUTES_AS_TEXT" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ACAD_XRECORD_READING" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="$(FME_MF_DIR_ENCODED)test_fit_pts.dxf"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ACAD"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceMETAFILE&lt;comma&gt;acad&lt;comma&gt;SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS&lt;comma&gt;Yes&lt;comma&gt;SourceALL_MERGED_FILTERS_NEED_NO_DEFS&lt;comma&gt;Yes&lt;comma&gt;SourceENTITY_OPTIONS&lt;comma&gt;&lt;comma&gt;SourceRESOLVE_BLOCKS&lt;comma&gt;yes&lt;comma&gt;SourceUSE_BLOCK_HEADER_LAYER&lt;comma&gt;yes&lt;comma&gt;SourceUSE_BLOCK_LAYER_INFO&lt;comma&gt;no&lt;comma&gt;SourceSTORE_INSERT_POINT&lt;comma&gt;no&lt;comma&gt;SourcePRESERVE_INSERTS&lt;comma&gt;no&lt;comma&gt;SourceRESOLVE_SELECTED_BLOCKS&lt;comma&gt;&lt;comma&gt;SourceVISIBLE_ATTRIBUTES_AS_TEXT&lt;comma&gt;yes&lt;comma&gt;SourceEXPLODE_MTEXT&lt;comma&gt;yes&lt;comma&gt;SourceREAD_AS_2_5D&lt;comma&gt;no&lt;comma&gt;SourceSPACE_OPTIONS&lt;comma&gt;&lt;comma&gt;SourceREAD_MODEL_SPACE&lt;comma&gt;yes&lt;comma&gt;SourceREAD_PAPER_SPACE&lt;comma&gt;NO&lt;comma&gt;SourceREAD_SELECTED_PAPER_SPACE&lt;comma&gt;&lt;comma&gt;SourceREAD_PAPER_SPACE_LAYOUTS&lt;comma&gt;yes&lt;comma&gt;SourceRESOLVE_VIEWPORTS&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceACAD_ATTRIBUTE_OPTIONS&lt;comma&gt;&lt;comma&gt;SourceINTERPRET_EXTENDED_DATA&lt;comma&gt;yes&lt;comma&gt;SourceLIST_EXTENDED_DATA&lt;comma&gt;yes&lt;comma&gt;SourceLIST_ATTRIBUTE_ENTITY_DATA&lt;comma&gt;yes&lt;comma&gt;SourceXRECORD_READING&lt;comma&gt;None&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;&lt;comma&gt;SourceACAD_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceALLOW_DASH_CHAR_IN_ATTR_NAMES&lt;comma&gt;yes&lt;comma&gt;SourceACAD_RDR_ADV_PARM_GROUP&lt;comma&gt;&lt;comma&gt;SourceCONVERT_ZERO_LENGTH_ARCS_TO_POINTS&lt;comma&gt;yes&lt;comma&gt;SourceRESOLVE_ENTITY_COLOR&lt;comma&gt;yes&lt;comma&gt;SourcePRESERVE_COMPLEX_HATCHES&lt;comma&gt;no&lt;comma&gt;SourceREAD_GROUPS&lt;comma&gt;no&lt;comma&gt;SourceREAD_USER_DICTIONARIES&lt;comma&gt;no&lt;comma&gt;SourceREAD_XREFS&lt;comma&gt;no&lt;comma&gt;SourceEVALUATE_MLINE_GEOM&lt;comma&gt;no&lt;comma&gt;SourceSTORE_LAYER_INFO&lt;comma&gt;no&lt;comma&gt;SourceSTORE_BULGE_INFO&lt;comma&gt;no&lt;comma&gt;SourceSTORE_SPLINE_DEFS&lt;comma&gt;yes&lt;comma&gt;SourceRESOLVE_DIMENSIONS&lt;comma&gt;yes&lt;comma&gt;SourcePRESERVE_CLIPPED_RASTERS&lt;comma&gt;no&lt;comma&gt;SourceIGNORE_FROZEN_LAYERS&lt;comma&gt;no&lt;comma&gt;SourceIGNORE_HIDDEN_LAYERS&lt;comma&gt;yes&lt;comma&gt;SourceIGNORE_UCS&lt;comma&gt;no&lt;comma&gt;SourceAPPLY_WORLD_FILE&lt;comma&gt;yes&lt;comma&gt;SourceREAD_PROXY_GRAPHICS&lt;comma&gt;yes&lt;comma&gt;SourceREAD_SYS_VARS&lt;comma&gt;no&lt;comma&gt;SourceREAD_REGIONS_AS_AREAS&lt;comma&gt;yes&lt;comma&gt;SourceREAD_RASTERS&lt;comma&gt;yes&lt;comma&gt;SourceDXF_HEADER_GROUP&lt;comma&gt;&lt;comma&gt;SourceUSE_DXF_HEADER&lt;comma&gt;&lt;comma&gt;SourceSTRUCTURE_EXTENDED_DATA&lt;comma&gt;no,METAFILE,acad"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ACAD_READ_USER_DICTIONARIES,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;User&lt;space&gt;Dictionary&lt;space&gt;XRecord&lt;space&gt;Data&lt;space&gt;Reading,ACAD_READ_RASTERS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Raster&lt;space&gt;Entities,ACAD_ALL_MERGED_FILTERS_NEED_NO_DEFS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ACAD&lt;space&gt;,ACAD_READ_AS_2_5D,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Polylines&lt;space&gt;as&lt;space&gt;2.5D,ACAD_READ_XREFS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;External&lt;space&gt;References,ACAD_IGNORE_HIDDEN_LAYERS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Ignore&lt;space&gt;Hidden&lt;space&gt;Layers,ACAD_XRECORD_READING,&quot;OPTIONAL CHECKBOX_WITHLABEL Lists%None&quot;,ACAD&lt;space&gt;Entity&lt;space&gt;XRecord&lt;space&gt;Data&lt;space&gt;Reading,ACAD_RESOLVE_DIMENSIONS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Explode&lt;space&gt;Dimensions,ACAD_STORE_INSERT_POINT,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Store&lt;space&gt;Insert&lt;space&gt;Location&lt;space&gt;on&lt;space&gt;Components,ACAD_ACAD_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS ACAD%Source&quot;,ACAD&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,ACAD_APPLY_WORLD_FILE,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Apply&lt;space&gt;World&lt;space&gt;File,ACAD_USE_BLOCK_LAYER_INFO,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Use&lt;space&gt;Block&lt;space&gt;Layer&lt;space&gt;Information&lt;space&gt;for&lt;space&gt;Components,ACAD_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP EXPOSE_ATTRS_MSG%ACAD_EXPOSE_FORMAT_ATTRS&quot;,ACAD&lt;space&gt;Schema&lt;space&gt;Attributes,ACAD_READ_MODEL_SPACE,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Model&lt;space&gt;Space,ACAD_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Convert&lt;space&gt;Zero&lt;space&gt;Length&lt;space&gt;Arcs&lt;space&gt;to&lt;space&gt;Points,ACAD_ACAD_ATTRIBUTE_OPTIONS,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_OPEN%INTERPRET_EXTENDED_DATA%LIST_EXTENDED_DATA%LIST_ATTRIBUTE_ENTITY_DATA%XRECORD_READING&quot;,ACAD&lt;space&gt;Attribute&lt;space&gt;Options,ACAD_IGNORE_UCS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Ignore&lt;space&gt;User&lt;space&gt;Coordinate&lt;space&gt;System&lt;space&gt;&lt;openparen&gt;UCS&lt;closeparen&gt;,ACAD_LIST_ATTRIBUTE_ENTITY_DATA,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Attribute&lt;space&gt;Entity&lt;space&gt;Data&lt;space&gt;As&lt;space&gt;List,ACAD_RESOLVE_SELECTED_BLOCKS,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_READ_SCHEMA_OVERRIDE_MODE,BLOCK_NAMES&quot;,ACAD&lt;space&gt;Explode&lt;space&gt;Selected&lt;space&gt;Blocks,ACAD_ENTITY_OPTIONS,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_OPEN%RESOLVE_BLOCKS%VISIBLE_ATTRIBUTES_AS_TEXT%EXPLODE_MTEXT%READ_AS_2_5D&quot;,ACAD&lt;space&gt;Entity&lt;space&gt;Options,ACAD_METAFILE,&quot;OPTIONAL RADIO_GROUP 1%&quot;&quot;Layer Name&quot;&quot;,acad%Geometry,acadGeom%&quot;&quot;Attribute Schema&quot;&quot;,acadScan&quot;,ACAD&lt;space&gt;Group&lt;space&gt;Entities&lt;space&gt;By,ACAD_PRESERVE_COMPLEX_HATCHES,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Preserve&lt;space&gt;Complex&lt;space&gt;Hatches&lt;space&gt;and&lt;space&gt;MPolygons,ACAD_DXF_HEADER_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%USE_DXF_HEADER&quot;,ACAD&lt;space&gt;DXF&lt;space&gt;header,ACAD_USE_BLOCK_HEADER_LAYER,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Use&lt;space&gt;Block&lt;space&gt;Feature&lt;space&gt;Type&lt;space&gt;for&lt;space&gt;Components,ACAD_STORE_SPLINE_DEFS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Store&lt;space&gt;Spline&lt;space&gt;Definitions,ACAD_STRUCTURE_EXTENDED_DATA,&quot;OPTIONAL NO_EDIT TEXT&quot;,ACAD&lt;space&gt;,ACAD_IGNORE_FROZEN_LAYERS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Ignore&lt;space&gt;Frozen&lt;space&gt;Layers,ACAD_READ_PAPER_SPACE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP FME_DISCLOSURE_CLOSED%READ_SELECTED_PAPER_SPACE%READ_PAPER_SPACE_LAYOUTS%RESOLVE_VIEWPORTS&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Paper&lt;space&gt;Space,ACAD_STORE_LAYER_INFO,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Store&lt;space&gt;Layer&lt;space&gt;Properties&lt;space&gt;on&lt;space&gt;Features,ACAD_READ_SYS_VARS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Drawing&lt;space&gt;System&lt;space&gt;Variables,ACAD_READ_GROUPS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Groups,ACAD_READ_REGIONS_AS_AREAS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Region&lt;space&gt;Entities&lt;space&gt;as&lt;space&gt;Areas,ACAD_USE_DXF_HEADER,&quot;OPTIONAL FILENAME_MUSTEXIST DXF_Files(*.dxf)|*.dxf|All_files(*.*)|*.*&quot;,ACAD&lt;space&gt;DXF&lt;space&gt;Header&lt;space&gt;File,ACAD_ALLOW_DASH_CHAR_IN_ATTR_NAMES,&quot;OPTIONAL NO_EDIT TEXT&quot;,ACAD&lt;space&gt;,ACAD_STORE_BULGE_INFO,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Store&lt;space&gt;Bulge&lt;space&gt;Info,ACAD_PRESERVE_CLIPPED_RASTERS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Preserve&lt;space&gt;Clipped&lt;space&gt;Rasters,ACAD_VISIBLE_ATTRIBUTES_AS_TEXT,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Visible&lt;space&gt;Attributes&lt;space&gt;as&lt;space&gt;Text&lt;space&gt;Entities,ACAD_LIST_EXTENDED_DATA,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Extended&lt;space&gt;Entity&lt;space&gt;Data&lt;space&gt;As&lt;space&gt;List,ACAD_SPACE_OPTIONS,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_OPEN%READ_MODEL_SPACE%READ_PAPER_SPACE&quot;,ACAD&lt;space&gt;Model&lt;space&gt;and&lt;space&gt;Paper&lt;space&gt;Space&lt;space&gt;Options,ACAD_EVALUATE_MLINE_GEOM,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Evaluate&lt;space&gt;Multi-line&lt;space&gt;Entity&lt;space&gt;Geometry,ACAD_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ACAD&lt;space&gt;,ACAD_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,ACAD&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,ACAD_READ_PROXY_GRAPHICS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Proxy&lt;space&gt;Entity&lt;space&gt;Graphics,ACAD_RESOLVE_ENTITY_COLOR,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Resolve&lt;space&gt;Entity&lt;space&gt;Color,ACAD_EXPLODE_MTEXT,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Explode&lt;space&gt;MText&lt;space&gt;Entities,ACAD_ACAD_RDR_ADV_PARM_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%RESOLVE_ENTITY_COLOR%PRESERVE_COMPLEX_HATCHES%PRESERVE_CLIPPED_RASTERS%RESOLVE_DIMENSIONS%EVALUATE_MLINE_GEOM%STORE_SPLINE_DEFS%STORE_BULGE_INFO%IGNORE_UCS%CONVERT_ZERO_LENGTH_ARCS_TO_POINTS%READ_GROUPS%READ_USER_DICTIONARIES%READ_XREFS%STORE_LAYER_INFO%IGNORE_FROZEN_LAYERS%IGNORE_HIDDEN_LAYERS%APPLY_WORLD_FILE%READ_PROXY_GRAPHICS%READ_SYS_VARS%READ_REGIONS_AS_AREAS%READ_RASTERS%DXF_HEADER_GROUP&quot;,ACAD&lt;space&gt;Advanced,ACAD_PRESERVE_INSERTS,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Preserve&lt;space&gt;Insert&lt;space&gt;Points,ACAD_INTERPRET_EXTENDED_DATA,&quot;OPTIONAL CHECKBOX_WITHLABEL yes%no&quot;,ACAD&lt;space&gt;Read&lt;space&gt;Interpreted&lt;space&gt;Extended&lt;space&gt;Entity&lt;space&gt;Data,ACAD_RESOLVE_BLOCKS,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP FME_DISCLOSURE_CLOSED%USE_BLOCK_HEADER_LAYER%USE_BLOCK_LAYER_INFO%STORE_INSERT_POINT%PRESERVE_INSERTS%RESOLVE_SELECTED_BLOCKS&quot;,ACAD&lt;space&gt;Explode&lt;space&gt;Blocks&lt;space&gt;into&lt;space&gt;Entities"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;No Spatial Filter&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="SINGLE_PORT"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="3790.5322253222535 -224.00224002240009"
+#!   BOUNDING_RECT="3790.5322253222535 -224.00224002240009 570.03231825772946 71"
+#!   ORDER="500000000000096"
+#!   PARMS_EDITED="false"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader__Generic_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="AttributeExposer"
+#!   VERSION="1"
+#!   POSITION="3933.0393303933038 -444.00444004440044"
+#!   BOUNDING_RECT="3933.0393303933038 -444.00444004440044 454 71"
+#!   ORDER="500000000000097"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="autocad_control_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_control_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="autocad_control_x,autocad_control_y,autocad_fit_x,autocad_fit_y,fme_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeExposer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="3936.0393603936036 -1017.010170101701"
+#!   BOUNDING_RECT="3936.0393603936036 -1017.010170101701 454 71"
+#!   ORDER="500000000000098"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="autocad_control_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_control_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="autocad_fit_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureProcessor&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;ctrl_pts&lt;space&gt;=&lt;space&gt;zip&lt;openparen&gt;*&lt;openbracket&gt;list&lt;openparen&gt;map&lt;openparen&gt;float&lt;comma&gt;&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;autocad_control_&lt;opencurly&gt;&lt;closecurly&gt;&lt;apos&gt;.format&lt;openparen&gt;s&lt;closeparen&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;s&lt;space&gt;in&lt;space&gt;&lt;openparen&gt;&lt;apos&gt;x&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;y&lt;apos&gt;&lt;closeparen&gt;&lt;closebracket&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;&lt;space&gt;x&lt;comma&gt;&lt;space&gt;y&lt;space&gt;in&lt;space&gt;ctrl_pts:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p&lt;space&gt;=&lt;space&gt;feature.clone&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p.setGeometry&lt;openparen&gt;fmeobjects.FMEPoint&lt;openparen&gt;x&lt;comma&gt;y&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p.setAttribute&lt;openparen&gt;&lt;apos&gt;fme_feature_type&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;control_points&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;p&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;fit_pts&lt;space&gt;=&lt;space&gt;zip&lt;openparen&gt;*&lt;openbracket&gt;list&lt;openparen&gt;map&lt;openparen&gt;float&lt;comma&gt;&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;autocad_fit_&lt;opencurly&gt;&lt;closecurly&gt;&lt;apos&gt;.format&lt;openparen&gt;s&lt;closeparen&gt;&lt;closeparen&gt;.split&lt;openparen&gt;&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;s&lt;space&gt;in&lt;space&gt;&lt;openparen&gt;&lt;apos&gt;x&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;y&lt;apos&gt;&lt;closeparen&gt;&lt;closebracket&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;&lt;space&gt;x&lt;comma&gt;&lt;space&gt;y&lt;space&gt;in&lt;space&gt;fit_pts:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p&lt;space&gt;=&lt;space&gt;feature.clone&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p.setGeometry&lt;openparen&gt;fmeobjects.FMEPoint&lt;openparen&gt;x&lt;comma&gt;y&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p.setAttribute&lt;openparen&gt;&lt;apos&gt;fme_feature_type&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;fit_points&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;p&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;feature&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="5198.3998036513331 -1035.5101701017011"
+#!   BOUNDING_RECT="5198.3998036513331 -1035.5101701017011 634.76669325772946 71"
+#!   ORDER="500000000000101"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20202"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="fme_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_Output_Logged"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 Output"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 SUMMARY"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;OTHER&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 36
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)convert_fit_pots_to_ctrl_pts.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME convert_fit_pots_to_ctrl_pts
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  0 0 1 0 1.5 0.5 2 0.25 3 -1
+INCLUDE [ if { {2D Coordinate List} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {2D Coordinate List} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {2D Coordinate List} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {2D Coordinate List} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {0 0 1 0 1.5 0.5 2 0.25 3 -1}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `0 0 1 0 1.5 0.5 2 0.25 3 -1' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF $(Creator_XML) CreationFactory    FACTORY_NAME Creator_XML_Creator    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<Unused>)
+FACTORY_DEF $(Creator_CLASSIC) CreationFactory    FACTORY_NAME Creator_CLASSIC_Creator    $(Creator_2D3D) $(Creator_COORDS)    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * TeeFactory    FACTORY_NAME Creator_Cloner    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES 1    COPY_NUMBER_ATTRIBUTE "_creation_instance"    OUTPUT FEATURE_TYPE Creator_CREATED        fme_feature_type Creator
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 6"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+Tcl2 set {CoordinateConcatenator_coordDelim} [FME_DecodeText {<comma>}];
+Tcl2 set {CoordinateConcatenator_elementDelim} [FME_DecodeText {}];
+Tcl2 proc CoordinateConcatenator_coord_list {DIM} {     global {CoordinateConcatenator_coordDelim};     global {CoordinateConcatenator_elementDelim};     set numCoords [FME_Coordinates numCoords];     set output {};     set includeX [string first {X} {X} ];     set includeY [string first {Y} {X} ];     set includeZ [string first {Z} {X} ];     if { $includeX == -1 && $includeY == -1 && $includeZ == -1 } {       FME_SetAttribute autocad_fit_x $output;       return;     };     for {set i 0} {$i < $numCoords} {incr i} {         if {$includeX != -1} {          append output [FME_Coordinates getCoord x $i];         };         if {$includeY != -1} {             if {$includeX != -1} {                append output [set {CoordinateConcatenator_elementDelim}] [FME_Coordinates getCoord y $i];             } else {                append output [FME_Coordinates getCoord y $i];             };         };         if { $DIM == 3 && $includeZ != -1 } {             if { $includeX != -1 || $includeY != -1 } {                append output [set {CoordinateConcatenator_elementDelim}] [FME_Coordinates getCoord z $i];             } else {                append output [FME_Coordinates getCoord z $i];             };         };         if {$i < ($numCoords - 1)} {           append output [set {CoordinateConcatenator_coordDelim}]         };     };     FME_SetAttribute autocad_fit_x $output; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateConcatenator    INPUT  FEATURE_TYPE Creator_CREATED    OUTPUT FEATURE_TYPE CoordinateConcatenator_OUTPUT         @Tcl2("CoordinateConcatenator_coord_list @Dimension()")
+# -------------------------------------------------------------------------
+Tcl2 set {CoordinateConcatenator_2_coordDelim} [FME_DecodeText {<comma>}];
+Tcl2 set {CoordinateConcatenator_2_elementDelim} [FME_DecodeText {}];
+Tcl2 proc CoordinateConcatenator_2_coord_list {DIM} {     global {CoordinateConcatenator_2_coordDelim};     global {CoordinateConcatenator_2_elementDelim};     set numCoords [FME_Coordinates numCoords];     set output {};     set includeX [string first {X} {Y} ];     set includeY [string first {Y} {Y} ];     set includeZ [string first {Z} {Y} ];     if { $includeX == -1 && $includeY == -1 && $includeZ == -1 } {       FME_SetAttribute autocad_fit_y $output;       return;     };     for {set i 0} {$i < $numCoords} {incr i} {         if {$includeX != -1} {          append output [FME_Coordinates getCoord x $i];         };         if {$includeY != -1} {             if {$includeX != -1} {                append output [set {CoordinateConcatenator_2_elementDelim}] [FME_Coordinates getCoord y $i];             } else {                append output [FME_Coordinates getCoord y $i];             };         };         if { $DIM == 3 && $includeZ != -1 } {             if { $includeX != -1 || $includeY != -1 } {                append output [set {CoordinateConcatenator_2_elementDelim}] [FME_Coordinates getCoord z $i];             } else {                append output [FME_Coordinates getCoord z $i];             };         };         if {$i < ($numCoords - 1)} {           append output [set {CoordinateConcatenator_2_coordDelim}]         };     };     FME_SetAttribute autocad_fit_y $output; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateConcatenator_2    INPUT  FEATURE_TYPE CoordinateConcatenator_OUTPUT    OUTPUT FEATURE_TYPE CoordinateConcatenator_2_OUTPUT         @Tcl2("CoordinateConcatenator_2_coord_list @Dimension()")
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE CoordinateConcatenator_2_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "autocad_entity" "SET_TO" "autocad_spline" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+INCLUDE [    puts {DEFAULT_MACRO FeatureWriterDataset_FeatureWriter @EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_ENCODED)test_fit_pts.dxf,FeatureWriter)}; ]
+FACTORY_DEF {*} WriterFactory    FACTORY_NAME FeatureWriter    WRITER_TYPE ACAD    WRITER_DATASET "$(FeatureWriterDataset_FeatureWriter)"    WRITER_SETTINGS "RUNTIME_MACROS,DEFAULT_ATTR_STORAGE<comma>external_attributes<comma>VERSION<comma>Release2013<comma>TEMPLATEFILE_GUI<comma><comma>TEMPLATE_GROUP<comma><comma>APPEND_TO_TEMPLATEFILE<comma>no<comma>PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES<comma>yes<comma>CAD_WRT_ADV_PARM_GROUP<comma><comma>DEFAULT_APPLICATION<comma><comma>OUTPUT_DEFINED_ATTRS_ONLY<comma>yes<comma>SHAPE_DIRECTORY<comma><comma>CREATED_BLOCK_NAME_PREFIX<comma><comma>AUDIT_AND_FIX<comma>yes<comma>COORDINATE_SYSTEM_STORAGE<comma>NONE<comma>USE_BLOCK_NAME_FOR_CREATION<comma>no<comma>PURGE<comma>no<comma>INSERTION_SCALE_UNITS<comma><comma>WRITE_THUMBNAIL_IMAGE<comma>no<comma>PREFER_DONUTS_AS_HATCHES<comma>no<comma>DESTINATION_DATASETTYPE_VALIDATION<comma>Yes,METAFILE,ACAD"    WRITER_METAFILE "ATTRIBUTE_CASE,ANY,ATTRIBUTE_INVALID_CHARS,.<space>%#<openbracket><closebracket><quote><openparen><closeparen>!?*<apos><amp>+<backslash><solidus>,ATTRIBUTE_LENGTH,60,ATTR_TYPE_MAP,char<openparen>width<closeparen><comma>fme_varchar<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_varbinary<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_char<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_binary<openparen>width<closeparen><comma>char<openparen>20<closeparen><comma>fme_datetime<comma>char<openparen>12<closeparen><comma>fme_time<comma>char<openparen>8<closeparen><comma>fme_date<comma>string<comma>fme_buffer<comma>string<comma>fme_binarybuffer<comma>string<comma>fme_xml<comma>string<comma>fme_json<comma>logical<comma>fme_boolean<comma><quote>number<openparen>31<comma>15<closeparen><quote><comma>fme_real64<comma><quote>number<openparen>15<comma>7<closeparen><quote><comma>fme_real32<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_int64<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_uint64<comma><quote>number<openparen>11<comma>0<closeparen><quote><comma>fme_int32<comma><quote>number<openparen>11<comma>0<closeparen><quote><comma>fme_uint32<comma><quote>number<openparen>6<comma>0<closeparen><quote><comma>fme_int16<comma><quote>number<openparen>6<comma>0<closeparen><quote><comma>fme_uint16<comma><quote>number<openparen>4<comma>0<closeparen><quote><comma>fme_int8<comma><quote>number<openparen>4<comma>0<closeparen><quote><comma>fme_uint8<comma><quote>number<openparen>width<comma>decimal<closeparen><quote><comma><quote>fme_decimal<openparen>width<comma>decimal<closeparen><quote>,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,,FEATURE_TYPE_LENGTH,0,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile<solidus>ACAD.fmf,FORMAT_NAME,ACAD,GEOM_MAP,autocad_point<comma>fme_point<comma>autocad_insert<comma>fme_point<comma>autocad_shape<comma>fme_point<comma>autocad_line<comma>fme_line<comma>autocad_leader<comma>fme_line<comma>autocad_xline<comma>fme_line<comma>autocad_ray<comma>fme_line<comma>autocad_polygon<comma>fme_polygon<comma>autocad_trace<comma>fme_polygon<comma>autocad_solid<comma>fme_polygon<comma>autocad_face<comma>fme_polygon<comma>autocad_layout<comma>fme_polygon<comma>autocad_text<comma>fme_text<comma>autocad_arc<comma>fme_arc<comma>autocad_ellipse<comma>fme_ellipse<comma>autocad_polygon<comma>fme_rectangle<comma>autocad_polygon<comma>fme_rounded_rectangle<comma>autocad_spline<comma>fme_line<comma>fme_no_map<comma>fme_no_geom<comma>autocad_attribute<comma>fme_no_geom<comma>autocad_multi_line<comma>fme_line<comma>autocad_multi_text<comma>fme_text<comma>autocad_attr_def<comma>fme_no_geom<comma>autocad_viewport<comma>fme_polygon<comma>autocad_tolerance<comma>fme_no_geom<comma>autocad_dictionary<comma>fme_no_geom<comma>autocad_mline_style<comma>fme_no_geom<comma>autocad_class<comma>fme_no_geom<comma>autocad_hatch<comma>fme_polygon<comma>autocad_mpolygon<comma>fme_polygon<comma>autocad_region<comma>fme_polygon<comma>autocad_surface<comma>fme_surface<comma>autocad_solid3d<comma>fme_solid<comma>autocad_raster<comma>fme_raster<comma>autocad_xref<comma>fme_point<comma>autocad_oriented_arc<comma>fme_line<comma>autocad_body<comma>fme_no_geom<comma>autocad_zombie<comma>fme_no_geom<comma>autocad_xrecord<comma>fme_no_geom<comma>autocad_leader<comma>fme_no_geom<comma>autocad_group<comma>fme_no_geom<comma>autocad_proxy<comma>fme_no_geom<comma>autocad_block<comma>fme_no_geom<comma>autocad_begin_block<comma>fme_no_geom<comma>autocad_end_block<comma>fme_no_geom<comma>autocad_block<comma>fme_collection<comma>autocad_dimension<comma>fme_collection<comma>autocad_dimension_def<comma>fme_no_geom<comma>autocad_info<comma>fme_no_geom<comma>autocad_polygon<comma>fme_point_cloud<comma>fme_no_map<comma>fme_feature_table,READER_ATTR_INDEX_TYPES,,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,yes,WORKBENCH_CANNED_SCHEMA,,WRITER,ACAD,WRITER_ATTR_INDEX_TYPES,,WRITER_DEFLINE_PARMS,<quote>GUI<space>NAMEDGROUP<space>autocad_settings<space>autocad_layer_desc%autocad_layer_appearance_group%autocad_layer_state_group<space>Layer<quote><comma><comma><quote>GUI<space>DISCLOSUREGROUP<space>autocad_layer_appearance_group<space>autocad_linetype%autocad_color<space>Appearance<quote><comma>YES<comma><quote>GUI<space>DISCLOSUREGROUP<space>autocad_layer_state_group<space>autocad_layer_on%autocad_layer_frozen%autocad_layer_hidden%autocad_layer_locked%autocad_layer_plottable<space>State<quote><comma><comma><quote>GUI<space>INTEGER<space>autocad_color<space>Default<space>Color<quote><comma>10<comma><quote>GUI<space>TEXT<space>autocad_linetype<space>Default<space>Linetype<quote><comma>CONTINUOUS<comma><quote>GUI<space>CHOICE<space>autocad_layer_frozen<space>Yes%No<space>Frozen<quote><comma>No<comma><quote>GUI<space>CHOICE<space>autocad_layer_hidden<space>Yes%No<space>Hidden<quote><comma>No<comma><quote>GUI<space>CHOICE<space>autocad_layer_locked<space>Yes%No<space>Locked<quote><comma>No<comma><quote>GUI<space>CHOICE<space>autocad_layer_on<space>Yes%No<space>On<quote><comma>Yes<comma><quote>GUI<space>CHOICE<space>autocad_layer_plottable<space>Yes%No<space>Plottable<quote><comma>Yes<comma><quote>GUI<space>OPTIONAL<space>TEXT<space>autocad_layer_desc<space>Description<quote><comma>,WRITER_DEF_LINE_TEMPLATE,<opencurly>FME_GEN_GROUP_NAME<closecurly><comma>autocad_color<comma>10<comma>autocad_linetype<comma>CONTINUOUS<comma>autocad_layer_frozen<comma>no<comma>autocad_layer_hidden<comma>no<comma>autocad_layer_locked<comma>no<comma>autocad_layer_on<comma>yes<comma>autocad_layer_plottable<comma>yes<comma>autocad_layer_desc<comma><quote><quote><quote><quote><quote><quote>,WRITER_FORMAT_PARAMETER,ADVANCED_PARMS<comma><quote>ACAD_OUT_DEFAULT_ATTR_STORAGE<space>ACAD_OUT_DEFAULT_APPLICATION<space>ACAD_OUT_OUTPUT_DEFINED_ATTRS_ONLY<space>ACAD_OUT_SHAPE_DIRECTORY<space>ACAD_OUT_CREATED_BLOCK_NAME_PREFIX<space>ACAD_OUT_AUDIT_AND_FIX<space>ACAD_OUT_COORDINATE_SYSTEM_STORAGE<space>ACAD_OUT_APPEND_TO_TEMPLATEFILE<space>ACAD_OUT_PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES<space>ACAD_OUT_USE_BLOCK_NAME_FOR_CREATION<space>ACAD_OUT_PURGE<space>ACAD_OUT_INSERTION_SCALE_UNITS<space>ACAD_OUT_WRITE_THUMBNAIL_IMAGE<space>ACAD_OUT_PREFER_DONUTS_AS_HATCHES<quote><comma>MIME_TYPE<comma><quote>.dwg<space>image<solidus>vnd.dwg<space>.dxf<space>image<solidus>vnd.dxf<space>ADD_DISPOSITION<quote><comma>DATASET_NAME<comma><quote>dwg<space>file<quote><comma>FEATURE_TYPE_NAME<comma>Layer<comma>FEATURE_TYPE_DEFAULT_NAME<comma>Layer1<comma>READER_DATASET_HINT<comma><quote>Select<space>the<space>DWG<space>file<openparen>s<closeparen><quote><comma>WRITER_DATASET_HINT<comma><quote>Specify<space>a<space>name<space>for<space>the<space>DWG<space>file<quote>,WRITER_HAS_DEFLINE_ATTRS,yes"    WRITER_FEATURE_TYPES "data:Output,ftp_feature_type_name,data,ftp_writer,ACAD,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,<lt>lt<gt>Unused<lt>gt<gt>,ftp_attribute_source,0,ftp_user_attributes,autocad_entity<comma>char<lt>openparen<gt>200<lt>closeparen<gt><comma>_creation_instance<comma>number<lt>openparen<gt>20<lt>comma<gt>0<lt>closeparen<gt><comma>autocad_fit_x<comma>number<lt>openparen<gt>31<lt>comma<gt>15<lt>closeparen<gt><comma>autocad_fit_y<comma>number<lt>openparen<gt>31<lt>comma<gt>15<lt>closeparen<gt>,ftp_user_attribute_values,<comma><comma><comma>,ftp_format_attributes,autocad_entity<comma>autocad_fit_x<comma>autocad_fit_y,ftp_format_parameters,autocad_settings<comma><comma>autocad_layer_appearance_group<comma>YES<comma>autocad_layer_state_group<comma><comma>autocad_color<comma>10<comma>autocad_linetype<comma>CONTINUOUS<comma>autocad_layer_frozen<comma>No<comma>autocad_layer_hidden<comma>No<comma>autocad_layer_locked<comma>No<comma>autocad_layer_on<comma>Yes<comma>autocad_layer_plottable<comma>Yes<comma>autocad_layer_desc<comma>"    WRITER_PARAMS "WRITE_THUMBNAIL_IMAGE,no,APPEND_TO_TEMPLATEFILE,no,VERSION,Release2013,COORDINATE_SYSTEM_STORAGE,NONE,USE_BLOCK_NAME_FOR_CREATION,no,DEFAULT_ATTR_STORAGE,external_attributes,AUDIT_AND_FIX,yes,DESTINATION_DATASETTYPE_VALIDATION,Yes,OUTPUT_DEFINED_ATTRS_ONLY,yes,PREFER_DONUTS_AS_HATCHES,no,PURGE,no,PRESERVE_TEMPLATE_PAPER_SPACE_ENTITIES,yes"    DATASET_ATTR "_dataset"    FEATURE_TYPE_LIST_ATTR "_feature_type"    TOTAL_FEATURES_WRITTEN_ATTR "_total_features_written"    OUTPUT_PORTS ""    INPUT Output FEATURE_TYPE AttributeCreator_OUTPUT  @FeatureType(ENCODED,data)    OUTPUT SUMMARY FEATURE_TYPE FeatureWriter_SUMMARY
+# -------------------------------------------------------------------------
+MACRO FeatureReader_OUTPUT_PORTS_ENCODED 
+MACRO FeatureReader_DIRECTIVES READ_USER_DICTIONARIES,no,READ_RASTERS,yes,ALL_MERGED_FILTERS_NEED_NO_DEFS,Yes,READ_AS_2_5D,no,READ_XREFS,no,IGNORE_HIDDEN_LAYERS,yes,XRECORD_READING,None,RESOLVE_DIMENSIONS,yes,STORE_INSERT_POINT,no,APPLY_WORLD_FILE,yes,USE_BLOCK_LAYER_INFO,no,READ_MODEL_SPACE,yes,CONVERT_ZERO_LENGTH_ARCS_TO_POINTS,yes,IGNORE_UCS,no,LIST_ATTRIBUTE_ENTITY_DATA,yes,METAFILE,acad,PRESERVE_COMPLEX_HATCHES,no,USE_BLOCK_HEADER_LAYER,yes,STORE_SPLINE_DEFS,yes,STRUCTURE_EXTENDED_DATA,no,IGNORE_FROZEN_LAYERS,no,READ_PAPER_SPACE,NO,STORE_LAYER_INFO,no,READ_SYS_VARS,no,READ_GROUPS,no,READ_REGIONS_AS_AREAS,yes,ALLOW_DASH_CHAR_IN_ATTR_NAMES,yes,STORE_BULGE_INFO,no,PRESERVE_CLIPPED_RASTERS,no,VISIBLE_ATTRIBUTES_AS_TEXT,yes,LIST_EXTENDED_DATA,yes,EVALUATE_MLINE_GEOM,no,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_SEARCH_ENVELOPE,NO,READ_PROXY_GRAPHICS,yes,RESOLVE_ENTITY_COLOR,yes,EXPLODE_MTEXT,yes,PRESERVE_INSERTS,no,INTERPRET_EXTENDED_DATA,yes,RESOLVE_BLOCKS,yes
+# Always provide an INTERACTION, otherwise the factory defaults to ENVELOPE_INTERSECTS
+INCLUDE [if { ( {NONE} == {<Unused>} ) || ( {($INTERACT_OPTIONS)} == {} ) } {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION NONE};          } else {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION "NONE"};          }         ]
+# Consolidate the attribute merge options to what the factory expects
+DEFAULT_MACRO FeatureReader_COMBINE_ATTRS
+INCLUDE [       if { {RESULT_ONLY} == {MERGE} } {          puts "MACRO FeatureReader_COMBINE_ATTRS <Unused>";       } else {          puts "MACRO FeatureReader_COMBINE_ATTRS RESULT_ONLY";       };    ]
+INCLUDE [    puts {DEFAULT_MACRO FeatureReaderDataset_FeatureReader @EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR_ENCODED)test_fit_pts.dxf,FeatureReader)}; ]
+FACTORY_DEF {*} QueryFactory    FACTORY_NAME FeatureReader    INPUT  FEATURE_TYPE FeatureWriter_SUMMARY    $(FCTQUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  { $(FeatureReader_COMBINE_ATTRS) }    QUERYFCT_ATTRIBUTE_PREFIX { <Unused> }    COMBINE_GEOMETRY    { RESULT_ONLY }    ENABLE_CACHE        { NO }    QUERYFCT_TABLE_SEPARATOR { SPACE }    READER_TYPE         { ACAD  }    READER_DATASET      { "$(FeatureReaderDataset_FeatureReader)" }    QUERYFCT_IDS        { "" }    READER_DIRECTIVES   { META_MACROS,SourceMETAFILE<comma>acad<comma>SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS<comma>Yes<comma>SourceALL_MERGED_FILTERS_NEED_NO_DEFS<comma>Yes<comma>SourceENTITY_OPTIONS<comma><comma>SourceRESOLVE_BLOCKS<comma>yes<comma>SourceUSE_BLOCK_HEADER_LAYER<comma>yes<comma>SourceUSE_BLOCK_LAYER_INFO<comma>no<comma>SourceSTORE_INSERT_POINT<comma>no<comma>SourcePRESERVE_INSERTS<comma>no<comma>SourceRESOLVE_SELECTED_BLOCKS<comma><comma>SourceVISIBLE_ATTRIBUTES_AS_TEXT<comma>yes<comma>SourceEXPLODE_MTEXT<comma>yes<comma>SourceREAD_AS_2_5D<comma>no<comma>SourceSPACE_OPTIONS<comma><comma>SourceREAD_MODEL_SPACE<comma>yes<comma>SourceREAD_PAPER_SPACE<comma>NO<comma>SourceREAD_SELECTED_PAPER_SPACE<comma><comma>SourceREAD_PAPER_SPACE_LAYOUTS<comma>yes<comma>SourceRESOLVE_VIEWPORTS<comma><lt>Unused<gt><comma>SourceACAD_ATTRIBUTE_OPTIONS<comma><comma>SourceINTERPRET_EXTENDED_DATA<comma>yes<comma>SourceLIST_EXTENDED_DATA<comma>yes<comma>SourceLIST_ATTRIBUTE_ENTITY_DATA<comma>yes<comma>SourceXRECORD_READING<comma>None<comma>SourceEXPOSE_ATTRS_GROUP<comma><comma>SourceACAD_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM<comma><comma>SourceCLIP_TO_ENVELOPE<comma>NO<comma>SourceALLOW_DASH_CHAR_IN_ATTR_NAMES<comma>yes<comma>SourceACAD_RDR_ADV_PARM_GROUP<comma><comma>SourceCONVERT_ZERO_LENGTH_ARCS_TO_POINTS<comma>yes<comma>SourceRESOLVE_ENTITY_COLOR<comma>yes<comma>SourcePRESERVE_COMPLEX_HATCHES<comma>no<comma>SourceREAD_GROUPS<comma>no<comma>SourceREAD_USER_DICTIONARIES<comma>no<comma>SourceREAD_XREFS<comma>no<comma>SourceEVALUATE_MLINE_GEOM<comma>no<comma>SourceSTORE_LAYER_INFO<comma>no<comma>SourceSTORE_BULGE_INFO<comma>no<comma>SourceSTORE_SPLINE_DEFS<comma>yes<comma>SourceRESOLVE_DIMENSIONS<comma>yes<comma>SourcePRESERVE_CLIPPED_RASTERS<comma>no<comma>SourceIGNORE_FROZEN_LAYERS<comma>no<comma>SourceIGNORE_HIDDEN_LAYERS<comma>yes<comma>SourceIGNORE_UCS<comma>no<comma>SourceAPPLY_WORLD_FILE<comma>yes<comma>SourceREAD_PROXY_GRAPHICS<comma>yes<comma>SourceREAD_SYS_VARS<comma>no<comma>SourceREAD_REGIONS_AS_AREAS<comma>yes<comma>SourceREAD_RASTERS<comma>yes<comma>SourceDXF_HEADER_GROUP<comma><comma>SourceUSE_DXF_HEADER<comma><comma>SourceSTRUCTURE_EXTENDED_DATA<comma>no,METAFILE,acad }    QUERYFCT_OUTPUT     { "BASED_ON_CONNECTIONS" }    CONTINUE_ON_READER_ERROR YES    QUERYFCT_RESULT_TAGS { $(FeatureReader_OUTPUT_PORTS_ENCODED) }    QUERYFCT_SET_FME_FEATURE_TYPE YES    READER_PARAMS_WWJD     { $(FeatureReader_DIRECTIVES) }    TREAT_READER_PARAM_AMPERSANDS_AS_LITERALS YES    OUTPUT RESULT FEATURE_TYPE FeatureReader_<OTHER>    OUTPUT READER_ERROR FEATURE_TYPE FeatureReader_<REJECTED>
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureReader_<Rejected> INPUT FEATURE_TYPE FeatureReader_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureReader<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeExposer    INPUT  FEATURE_TYPE FeatureReader_<OTHER>    OUTPUT FEATURE_TYPE AttributeExposer_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeExposer OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeExposer_OUTPUT   OUTPUT FEATURE_TYPE AttributeExposer_OUTPUT_0_FFIuKLJymLk=   OUTPUT FEATURE_TYPE AttributeExposer_OUTPUT_1_DwSUCPjfsfg=
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE AttributeExposer_OUTPUT_1_DwSUCPjfsfg=    SYMBOL_NAME FeatureProcessor    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf><lf>class<space>FeatureProcessor<openparen>object<closeparen>:<lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space>pass<lf><space><space><space><space>def<space>input<openparen>self<comma>feature<closeparen>:<lf><space><space><space><space><space><space><space><space>ctrl_pts<space>=<space>zip<openparen>*<openbracket>list<openparen>map<openparen>float<comma><space>feature.getAttribute<openparen><apos>autocad_control_<opencurly><closecurly><apos>.format<openparen>s<closeparen><closeparen>.split<openparen><apos><comma><apos><closeparen><closeparen><closeparen><space>for<space>s<space>in<space><openparen><apos>x<apos><comma><apos>y<apos><closeparen><closebracket><closeparen><lf><space><space><space><space><space><space><space><space>for<space><space>x<comma><space>y<space>in<space>ctrl_pts:<lf><space><space><space><space><space><space><space><space><space><space><space><space>p<space>=<space>feature.clone<openparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>p.setGeometry<openparen>fmeobjects.FMEPoint<openparen>x<comma>y<closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>p.setAttribute<openparen><apos>fme_feature_type<apos><comma><space><apos>control_points<apos><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>self.pyoutput<openparen>p<closeparen><lf><space><space><space><space><space><space><space><space>fit_pts<space>=<space>zip<openparen>*<openbracket>list<openparen>map<openparen>float<comma><space>feature.getAttribute<openparen><apos>autocad_fit_<opencurly><closecurly><apos>.format<openparen>s<closeparen><closeparen>.split<openparen><apos><comma><apos><closeparen><closeparen><closeparen><space>for<space>s<space>in<space><openparen><apos>x<apos><comma><apos>y<apos><closeparen><closebracket><closeparen><lf><space><space><space><space><space><space><space><space>for<space><space>x<comma><space>y<space>in<space>fit_pts:<lf><space><space><space><space><space><space><space><space><space><space><space><space>p<space>=<space>feature.clone<openparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>p.setGeometry<openparen>fmeobjects.FMEPoint<openparen>x<comma>y<closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>p.setAttribute<openparen><apos>fme_feature_type<apos><comma><space><apos>fit_points<apos><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>self.pyoutput<openparen>p<closeparen><lf><space><space><space><space><space><space><space><space>self.pyoutput<openparen>feature<closeparen><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space>pass    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {PythonCaller_Output_Logged} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME PythonCaller_Output_Logged_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY { fme_feature_type }    GROUP_ATTRIBUTE_PREFIX { PythonCaller_Output_Logged }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME PythonCaller_Output_Logged_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA autocad_control_x,varchar<openparen>200<closeparen>,autocad_control_y,varchar<openparen>200<closeparen>,autocad_fit_x,varchar<openparen>200<closeparen>,autocad_fit_y,varchar<openparen>200<closeparen>,fme_feature_type,varchar<openparen>200<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureReader__Generic_ (Disabled) Nuker"   INPUT FEATURE_TYPE AttributeExposer_OUTPUT_0_FFIuKLJymLk=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
